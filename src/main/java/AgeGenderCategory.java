@@ -2,7 +2,7 @@ public class AgeGenderCategory {
 
     public static void main(String[] args) {
         AgeGenderCategory ag = new AgeGenderCategory();
-        String result = ag.genderAgeCategory(23, "Female");
+        String result = ag.genderAgeCategory(-1, "Female");
         System.out.println(result);
 
     }
@@ -28,7 +28,7 @@ public class AgeGenderCategory {
                 ageCategory = "Senior Citizen Female";
             }
         } else {
-            System.out.println("Please provide the correct age and gender.");
+            System.out.println("Please provide the correct age or gender.");
         }
         return ageCategory;
     }
